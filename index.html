@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptimaData | Business Intelligence & Data Automation</title>
+    
+    <!-- Google Fonts: Inter para un perfil corporativo y limpio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome para Íconos Profesionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        corp: {
+                            navy: '#0f172a',    // Slate 900
+                            blue: '#1d4ed8',    // Blue 700
+                            light: '#f8fafc',   // Slate 50
+                            accent: '#0ea5e9'   // Sky 500
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-corp-light text-slate-800 font-sans antialiased selection:bg-corp-blue selection:text-white">
+
+    <!-- Header -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-8 h-8 bg-corp-blue flex items-center justify-center rounded shadow-sm">
+                        <i class="fa-solid fa-chart-simple text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold text-corp-navy tracking-tight uppercase">OptimaData</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#soluciones" class="text-slate-600 hover:text-corp-blue font-medium text-sm transition uppercase tracking-wide">Soluciones</a>
+                    <a href="#infraestructura" class="text-slate-600 hover:text-corp-blue font-medium text-sm transition uppercase tracking-wide">Infraestructura</a>
+                    <a href="#contacto" class="text-slate-600 hover:text-corp-blue font-medium text-sm transition uppercase tracking-wide">Contacto</a>
+                </div>
+                <div>
+                    <a href="#contacto" class="bg-corp-navy hover:bg-slate-800 text-white px-6 py-2.5 rounded text-sm font-semibold shadow transition flex items-center gap-2">
+                        <i class="fa-solid fa-envelope"></i> Solicitar Auditoría
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section con Gráfico Moderno -->
+    <section class="relative bg-white overflow-hidden py-16 lg:py-24 border-b border-slate-200">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-[500px] h-[500px] rounded-full bg-slate-100 opacity-70 blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Columna Izquierda: Texto Comercial -->
+                <div class="max-w-3xl">
+                    <span class="inline-block px-3 py-1 bg-blue-50 border border-blue-100 text-corp-blue font-semibold text-xs mb-6 tracking-widest uppercase rounded">
+                        Orquestación de Datos & Analítica Avanzada
+                    </span>
+                    <h1 class="text-4xl md:text-5xl lg:text-5xl font-extrabold text-corp-navy leading-tight mb-6 tracking-tight">
+                        Business Intelligence & Automatización Estratégica
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 font-light leading-relaxed">
+                        Transformamos datos dispersos en ventajas competitivas. Desplegamos infraestructura de Inteligencia Artificial para enriquecer su CRM, auditar procesos operativos y generar cuadros de mando ejecutivos en tiempo real.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contacto" class="bg-corp-blue hover:bg-blue-800 text-white font-semibold py-3.5 px-8 rounded shadow-lg transition flex items-center justify-center gap-2">
+                            Evaluación Técnica Inicial
+                        </a>
+                        <a href="#soluciones" class="bg-white text-corp-navy border border-slate-300 font-semibold py-3.5 px-8 rounded hover:bg-slate-50 transition flex items-center justify-center gap-2">
+                            Explorar Soluciones
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: UI Dashboard Gráfico -->
+                <div class="relative w-full rounded-2xl bg-corp-navy shadow-2xl overflow-hidden border border-slate-700 p-6 lg:p-8 transform transition hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(15,23,42,0.5)]">
+                    <!-- Cabecera del Gráfico -->
+                    <div class="flex justify-between items-start mb-8">
+                        <div>
+                            <h4 class="text-slate-400 text-xs uppercase tracking-widest font-semibold mb-1">Rendimiento Operativo (KPI)</h4>
+                            <div class="flex items-baseline gap-3">
+                                <span class="text-4xl font-bold text-white tracking-tight">98.4%</span>
+                                <span class="text-emerald-400 text-sm font-medium flex items-center gap-1">
+                                    <i class="fa-solid fa-arrow-trend-up"></i> +12.3%
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 bg-slate-800 px-3 py-1 rounded-full border border-slate-700">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span class="text-slate-300 text-[10px] font-mono tracking-wider">LIVE DATA</span>
+                        </div>
+                    </div>
+
+                    <!-- Gráfico Vectorial Lineal SVG -->
+                    <div class="w-full h-40 relative">
+                        <svg viewBox="0 0 400 150" class="w-full h-full overflow-visible preserve-3d">
+                            <!-- Líneas de cuadrícula -->
+                            <line x1="0" y1="150" x2="400" y2="150" stroke="#334155" stroke-width="1"></line>
+                            <line x1="0" y1="100" x2="400" y2="100" stroke="#334155" stroke-width="1" stroke-dasharray="4"></line>
+                            <line x1="0" y1="50" x2="400" y2="50" stroke="#334155" stroke-width="1" stroke-dasharray="4"></line>
+                            
+                            <!-- Gradiente de fondo debajo de la línea -->
+                            <defs>
+                                <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.4"></stop>
+                                    <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path d="M0,120 C50,110 100,130 150,70 C200,10 250,90 300,50 C350,10 380,30 400,5 L400,150 L0,150 Z" fill="url(#chart-gradient)"></path>
+                            
+                            <!-- Línea de tendencia brillante -->
+                            <path d="M0,120 C50,110 100,130 150,70 C200,10 250,90 300,50 C350,10 380,30 400,5" fill="none" stroke="#0ea5e9" stroke-width="3" style="filter: drop-shadow(0 0 6px rgba(14,165,233,0.8));"></path>
+                            
+                            <!-- Puntos de datos (Nodos) -->
+                            <circle cx="150" cy="70" r="4" fill="#0ea5e9" stroke="#0f172a" stroke-width="2"></circle>
+                            <circle cx="300" cy="50" r="4" fill="#0ea5e9" stroke="#0f172a" stroke-width="2"></circle>
+                            <circle cx="400" cy="5" r="5" fill="#ffffff" style="filter: drop-shadow(0 0 4px rgba(255,255,255,0.9));"></circle>
+                        </svg>
+                    </div>
+
+                    <!-- Métricas Inferiores -->
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="bg-slate-800 rounded p-4 border border-slate-700 flex flex-col">
+                            <span class="text-slate-400 text-[10px] uppercase tracking-wider mb-1">Procesamiento (24h)</span>
+                            <span class="text-white font-semibold text-lg">24.5 TB</span>
+                        </div>
+                        <div class="bg-slate-800 rounded p-4 border border-slate-700 flex flex-col">
+                            <span class="text-slate-400 text-[10px] uppercase tracking-wider mb-1">Precisión IA Auditora</span>
+                            <span class="text-white font-semibold text-lg">99.8%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluciones Corporativas -->
+    <section id="soluciones" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-corp-navy mb-4 tracking-tight">Arquitectura de Soluciones</h2>
+                <p class="text-lg text-slate-600 max-w-2xl">Integración tecnológica de alto nivel para erradicar cuellos de botella administrativos y maximizar la precisión operativa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Dashboards e Insights (BI) -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="w-12 h-12 bg-slate-100 rounded flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-chart-pie text-2xl text-corp-navy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corp-navy mb-3">Business Intelligence (BI) & Dashboards</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Diseño y despliegue de cuadros de mando analíticos avanzados. Transformamos volúmenes masivos de registros operativos en reportes visuales dinámicos que revelan tendencias ocultas y facilitan decisiones estratégicas informadas.
+                    </p>
+                </div>
+
+                <!-- Enriquecimiento CRM -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="w-12 h-12 bg-slate-100 rounded flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-database text-2xl text-corp-navy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corp-navy mb-3">Enriquecimiento & Saneamiento de CRM</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Extracción, validación y consolidación de datos prospectivos. Estructuramos bases de datos fragmentadas para convertirlas en activos comerciales accionables, eliminando duplicidad e información obsoleta.
+                    </p>
+                </div>
+
+                <!-- Agente Auditor (QA) -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="w-12 h-12 bg-slate-100 rounded flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-microchip text-2xl text-corp-navy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corp-navy mb-3">Agente Auditor de Calidad (IA)</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Implementación de modelos de lenguaje (NLP) para evaluar automáticamente transcripciones de llamadas y tickets de soporte. Aseguramos el cumplimiento de sus protocolos (SOPs) sin el sesgo ni el costo de la revisión manual humana.
+                    </p>
+                </div>
+
+                <!-- Automatización de Tareas -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition border border-slate-200">
+                    <div class="w-12 h-12 bg-slate-100 rounded flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-network-wired text-2xl text-corp-navy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-corp-navy mb-3">Orquestación y Data Pipelines</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">
+                        Construcción de flujos automatizados para la transferencia de información entre sistemas aislados. Erradicamos la entrada manual de datos mediante integraciones API y desarrollo de scripts a medida.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Call to Action -->
+    <section id="infraestructura" class="py-16 bg-corp-navy text-white text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 tracking-tight">Escale su Capacidad Operativa con Datos</h2>
+            <p class="text-lg mb-8 text-slate-300 font-light">
+                Solicite una consulta técnica. Analizaremos sus cuellos de botella actuales y propondremos una arquitectura de automatización adaptada a sus requerimientos de seguridad e infraestructura.
+            </p>
+            <a href="#contacto" class="bg-corp-blue hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded shadow transition inline-flex items-center gap-2">
+                Iniciar Proyecto de Integración
+            </a>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto Corporativo -->
+    <section id="contacto" class="py-24 bg-white relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-corp-navy mb-3 tracking-tight">Contacto Institucional</h2>
+                <p class="text-slate-600">
+                    Complete el formulario para programar un briefing ejecutivo con nuestro equipo de ingeniería de datos.
+                </p>
+            </div>
+            
+            <!-- FORMULARIO FORMSPREE INTEGRADO -->
+            <form action="https://formspree.io/f/xqpppojw" method="POST" class="bg-slate-50 p-8 rounded-xl border border-slate-200 shadow-sm">
+                
+                <input type="hidden" name="_subject" value="Nuevo Requerimiento BI - OptimaData">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="nombre" class="block text-sm font-semibold text-corp-navy mb-2">Nombre y Apellidos</label>
+                        <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded focus:ring-1 focus:ring-corp-blue focus:outline-none text-slate-900 transition" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-corp-navy mb-2">Correo Corporativo</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded focus:ring-1 focus:ring-corp-blue focus:outline-none text-slate-900 transition" required>
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="empresa" class="block text-sm font-semibold text-corp-navy mb-2">Empresa / Razón Social</label>
+                    <input type="text" id="empresa" name="empresa" class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded focus:ring-1 focus:ring-corp-blue focus:outline-none text-slate-900 transition" required>
+                </div>
+
+                <div class="mb-8">
+                    <label for="mensaje" class="block text-sm font-semibold text-corp-navy mb-2">Descripción del Requerimiento Técnico</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-2.5 bg-white border border-slate-300 rounded focus:ring-1 focus:ring-corp-blue focus:outline-none text-slate-900 resize-none transition" placeholder="Detalle los procesos a automatizar, sistemas actuales de CRM o necesidades de reportería (BI)..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-corp-navy hover:bg-slate-800 text-white font-semibold py-3.5 px-4 rounded shadow transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-sm"></i> Enviar Solicitud de Análisis
+                </button>
+                <p class="text-xs text-center text-slate-400 mt-4">
+                    <i class="fa-solid fa-lock mr-1"></i> La información será tratada bajo estrictos acuerdos de confidencialidad (NDA).
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-corp-navy text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-6 h-6 bg-slate-700 flex items-center justify-center rounded">
+                    <i class="fa-solid fa-chart-simple text-white text-xs"></i>
+                </div>
+                <span class="font-bold text-white tracking-wide uppercase text-sm">OptimaData</span>
+            </div>
+            <p class="text-xs text-center md:text-left">
+                &copy; 2026 OptimaData Analytics. Todos los derechos reservados.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-6 text-xs uppercase tracking-wider font-semibold">
+                <a href="mailto:OptimaData-tech@proton.me" class="hover:text-white transition flex items-center gap-1">
+                    <i class="fa-solid fa-envelope"></i> OptimaData-tech@proton.me
+                </a>
+                <a href="#" class="hover:text-white transition">Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
